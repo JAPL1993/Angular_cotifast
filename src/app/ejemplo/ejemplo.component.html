@@ -1,0 +1,13 @@
+<h1>Hola mamá</h1>
+<p *ngIf="status">{{nombre}}</p>
+<ul>
+  <li *ngFor="let item of json.data">
+    <div [ngSwitch]="item.nombre">
+      <p *ngSwitchCase="'pepe'">pepe</p>
+    </div>
+  </li>
+</ul>
+
+<button (click)="prueba()">
+Esto es un prueba de click
+</button>
